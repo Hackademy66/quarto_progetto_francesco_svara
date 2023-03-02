@@ -19,3 +19,4 @@ Route::get('/', [PublicController::class, ('homepage')])->name('homepage');
 Route::get('/about', [PublicController::class, ('about')])->name('about');
 Route::get('/contact', [PublicController::class, ('contact')])->name('contact');
 Route::get('/services', [PublicController::class, ('services')])->name('services');
+Route ::post('/contattaci/submit', [PublicController::class, 'contact_us_submit'])->name('contact_us_submit');
