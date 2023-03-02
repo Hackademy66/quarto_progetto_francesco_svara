@@ -11,7 +11,7 @@
   <div class="container my-5">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
-        <form class="p-5 shadow">
+        <form class="p-5 shadow" method="POST" action="">
           <div class="mb-3">
             <label for="name" class="form-label">Nome completo</label>
             <input type="text" class="form-control" id="name">
@@ -25,7 +25,7 @@
             <textarea mane="" id="message" cols="30" rows="7" class="form-control"></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Contattaci</button>
         </form>
       </div>    
     </div>                    
