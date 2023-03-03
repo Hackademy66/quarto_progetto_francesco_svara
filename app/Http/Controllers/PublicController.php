@@ -30,8 +30,4 @@ class PublicController extends Controller
 
         return redirect(route('homepage'))->with('status', 'Email inviata! Grazie!');
     }
-
-    public function services() {
-        return view('services');
-    }
 }

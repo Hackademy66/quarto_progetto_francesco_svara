@@ -7,4 +7,20 @@
       </div>    
     </div>                    
   </div>
+
+  <div class="container py-2 my-2">
+    <div class="row">
+      @foreach($services as $service)
+      <div class="col-md-3 py-5 my-5">
+        <x-card 
+        id="{{$service['id']}}"
+        name="{{$service['name']}}"
+        portata="{{$service['portata']}}"
+        nation="{{$service['nation']}}"
+        img="{{$service['img']}}"
+        />
+      </div>
+      @endforeach
+    </div>                    
+  </div>
 </x-layout>
