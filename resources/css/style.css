@@ -1,0 +1,70 @@
+:root {
+    --color-main: rgb(23,24,29);
+}
+
+.nav-custom {
+    border-bottom: solid 2px #fff;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.bg-main {
+    background-color: var(--color-main);
+}
+
+.text-mix {
+    background: linear-gradient(to left, #E3D88C 25%, #866413 100%);
+    background-clip: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+li, a {
+    all: unset;
+}
+
+/*----- Buttons -----*/
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background: linear-gradient(to left, #E3D88C 25%, #866413 100%);
+    color: black;
+    padding: .75rem 1.4rem;
+    border-radius: .25rem;
+    font-weight: var(--font-medium);
+    position: relative;
+    z-index: 1;
+}
+
+.button::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: .25rem;
+}
+
+.button:hover::after {
+    transform: scale(1);
+}
+
+.button__icon {
+    font-size: 1.25rem;
+}
+
+.home {
+    background-image: url(/public/media/home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}

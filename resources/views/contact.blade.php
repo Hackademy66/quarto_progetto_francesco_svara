@@ -1,12 +1,21 @@
 <x-layout>
   <div class="container py-5 my-5">
-    <div class="row">
-      <div class="col-12">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
         <h1>Contatti</h1>
         <p>I nostri contatti, seguici o contattaci tramite questa pagina</p>
       </div>    
+      <div class="col-12 col-md-8">
+        @if (session()->has('status'))
+          <div class="alert alert-success alert-dismissible fade show border-start border-end my-3 px-3" role="alert">
+            {{ session('status') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        @endif
+      </div>
     </div>                    
   </div>
+
 
   <div class="container my-5">
     <div class="row justify-content-center">
