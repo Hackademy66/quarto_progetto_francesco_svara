@@ -18,8 +18,8 @@
           <h1>I'm Mariam</h1>
           <h3>Frontend Developer</h3>
           <p>High level experience in web design and development knowledge, producing quality work.</p>
-          <a href="#about" class="button"><i class="uil uil-user button__icon"></i>
-            More About Me
+          <a href="/about" class="button"><i class="uil uil-user button__icon"></i>
+            About Me
           </a>
         </div>   
         <div class="text-white py-5 ps-lg-5 d-flex justify-content-between">

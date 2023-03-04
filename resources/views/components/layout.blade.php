@@ -10,7 +10,7 @@
       </header>
 
       <main>
-        <div>
+        <div class="min-vh-100">
           {{$slot}}
         </div>
       </main>

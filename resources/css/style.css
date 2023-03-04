@@ -1,5 +1,6 @@
 :root {
-    --color-main: rgb(23,24,29);
+    --body-color: hsl(242, 19%, 5%);
+    --box-color: hsl(240, 12%, 15%);
 }
 
 .nav-custom {
@@ -12,7 +13,7 @@
 }
 
 .bg-main {
-    background-color: var(--color-main);
+    background-color: var(--body-color);
 }
 
 .text-mix {
@@ -24,6 +25,7 @@
 
 li, a {
     all: unset;
+    cursor: pointer;
 }
 
 /*----- Buttons -----*/
@@ -67,4 +69,32 @@ li, a {
     background-size: cover;
     width: 50%;
     height: 100vh;
+}
+
+/*----- about -----*/
+.about__box {
+    text-align: center;
+    border-radius: .25rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--box-color);
+}
+
+.about__img {
+    background-image: url(/public/media/home.png);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 80vh;
+    border-radius: 1.5rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    .home {
+        width: 100%;
+    }
+
+    .about__img {
+        width: 100%;
+    }
 }
