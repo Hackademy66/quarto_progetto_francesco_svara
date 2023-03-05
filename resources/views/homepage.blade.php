@@ -3,21 +3,11 @@
     <div class="row">
       <div class="col-12 col-lg-6 ps-5 py-5">
         <div class="col-12 col-lg-6 py-5 ps-lg-5">
-        <p>Seguimi su</p>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="text-mix display-5 uil uil-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com" target="_blank">
-            <i class="text-mix display-5 uil uil-instagram"></i>
-          </a>
-          <a href="https://it.linkedin.com" target="_blank">
-            <i class="text-mix display-5 uil uil-linkedin"></i>
-          </a>
         </div>
         <div class="text-white py-5 p-lg-5">
-          <h1>I'm Mariam</h1>
+          <h1>Ciao, sono Mariam</h1>
           <h3>Frontend Developer</h3>
-          <p>High level experience in web design and development knowledge, producing quality work.</p>
+          <p>Competenza di alto livello nella progettazione e sviluppo web, in grado di produrre lavoro di qualità.</p>
           <a href="/about" class="button"><i class="uil uil-user button__icon"></i>
             About Me
           </a>
