@@ -1,6 +1,6 @@
 :root {
     --body-color: rgb(39, 41, 44);
-    --box-color: hsl(240, 12%, 21%);
+    --box-color: hsl(244, 12%, 23%);
 }
 
 .nav-custom {
@@ -27,9 +27,12 @@
     -webkit-text-fill-color: transparent;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 li {
-    all: unset;
-    cursor: pointer;
+    list-style: none;
 }
 
 a {
@@ -55,6 +58,10 @@ a:hover {
     font-weight: var(--font-medium);
     position: relative;
     z-index: 1;
+}
+
+.button-white {
+    color: white !important;
 }
 
 .button::after {
@@ -85,6 +92,12 @@ a:hover {
     height: 100vh;
 }
 
+.home-icon {
+    width: 11rem;
+    background-color: var(--box-color);
+    border-radius: .75rem;
+}
+
 /*----- about -----*/
 .about__box {
     text-align: center;
@@ -100,6 +113,11 @@ a:hover {
     width: 50%;
     height: 90vh;
     border-radius: 1.5rem;
+}
+
+.card-cs {
+    width: 20rem;
+    height: 25rem;
 }
 
 

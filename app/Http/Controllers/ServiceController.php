@@ -6,12 +6,35 @@ use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
-    public $services = [
-        ['id' => 1, 'name' => 'Carbonara','nation' => 'Italia', 'portata' => 'Primo', 'img' => 'https://d15j9y5wlusr11.cloudfront.net/filer_public_thumbnails/filer_public/5a/4b/5a4be002-5bd2-4de5-822e-888c3e179145/recipe.jpg__1200x1200_q80_ALIAS-extra_large_crop-smart_subsampling-2.jpg?format=webp'],
-        ['id' => 2, 'name' => 'Risotto Milanese','nation' => 'Italia', 'portata' => 'Primo', 'img' => 'https://d15j9y5wlusr11.cloudfront.net/filer_public_thumbnails/filer_public/64/63/6463e944-0ddc-4afb-ba5a-a604e6b33e83/ricetta.png__1200x1200_q80_ALIAS-extra_large_crop-smart_subsampling-2.jpg?format=webp'],
-        ['id' => 3, 'name' => 'Amatriciana','nation' => 'Italia', 'portata' => 'Primo', 'img' => 'https://d15j9y5wlusr11.cloudfront.net/filer_public_thumbnails/filer_public/aa/42/aa42dabb-ee07-437e-9f5f-c57107a88746/ricetta.png__1200x1200_q80_ALIAS-extra_large_crop-smart_subsampling-2.jpg?format=webp'],
-        ['id' => 4, 'name' => 'Parmigiana','nation' => 'Italia', 'portata' => 'Primo', 'img' => 'https://d15j9y5wlusr11.cloudfront.net/filer_public_thumbnails/filer_public/ca/6e/ca6e318e-f863-4ea6-b6ae-dac2a2210dc8/recipe.jpg__1200x1200_q80_ALIAS-extra_large_crop-smart_subsampling-2.jpg?format=webp'],
-        ['id' => 5, 'name' => 'Strudel','nation' => 'Austria', 'portata' => 'Dolce', 'img' => 'https://d15j9y5wlusr11.cloudfront.net/filer_public_thumbnails/filer_public/95/d7/95d73e0d-35ec-4d69-b223-5eaa11e8a354/ricetta.png__1200x1200_q80_ALIAS-extra_large_crop-smart_subsampling-2.jpg?format=webp'],
+    public $services = 
+    [
+        [
+        'id' => 1,
+        'name' => 'Creazione di una pagina web statica',
+        'description' => 'Creazione di una pagina web statica con un design personalizzato, completamente responsive e che funzioni correttamente su tutti i dispositivi. Il servizio include la codifica del design in HTML, CSS e JavaScript.', 
+        'deliverables' => 'statica',
+        'timeframe' => '2-4', 
+        'price' => '€1000',
+        'img' => '/media/servizio_01.jpg',
+        ],
+        [
+        'id' => 2, 
+        'name' => 'Creazione di una pagina web dinamica',
+        'description' => 'Creazione di una pagina web dinamica con funzionalità interattive, come ad esempio moduli di contatto o sistemi di login. Il servizio include la codifica del design in HTML, CSS e JavaScript, nonché lo sviluppo di funzionalità dinamiche utilizzando un linguaggio di programmazione lato server, come PHP.', 
+        'deliverables' => 'dinamica',
+        'timeframe' => '4-6', 
+        'price' => '€2000',
+        'img' => '/media/servizio_02.jpg',
+        ],
+        [
+        'id' => 3, 
+        'name' => 'Sviluppo di un tema personalizzato per WordPress',
+        'description' => "Sviluppo di un tema personalizzato per il CMS WordPress, basato sul design fornito dal cliente o su un design creato ad hoc dal nostro team di sviluppo. Il servizio include la creazione di template per le pagine principali del sito (come l'homepage, la pagina dei servizi, la pagina del blog, ecc.), la personalizzazione del design tramite CSS e l'integrazione di eventuali plugin o widget richiesti dal cliente.", 
+        'deliverables' => 'Wordpress',
+        'timeframe' => '3-4',
+        'price' => '€1500', 
+        'img' => '/media/servizio_03.jpg',
+        ],
     ];
 
     public function service_index() {
