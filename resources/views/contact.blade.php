@@ -11,6 +11,12 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         @endif
+        @if (session('emailError'))
+          <div class="alert alert-danger alert-dismissible fade show border-start border-end" role="alert">
+            {{ session('emailError') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        @endif
       </div>
     </div>                    
   </div>

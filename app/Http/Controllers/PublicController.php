@@ -28,7 +28,11 @@ class PublicController extends Controller
 
         $user_data = compact('name', 'email', 'message');
 
-        Mail::to($email)->send(new ContactMail($user_data));
+        try{
+            Mail::to($email)->send(new ContactMail($user_data));
+        } catch(\Exception $e) {
+            return redirect()->back()->with('emailError', "C'è stato un problema con l'invio della mail. Riprova più tardi.");
+        }
 
         return redirect(route('contact'))->with('status', 'Email inviata! Grazie!');
     }
